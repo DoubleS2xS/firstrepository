@@ -1,0 +1,71 @@
+body{
+    padding-left: 10px;
+}
+h1{
+    text-align: center;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+input[type="radio"]:checked {
+    background-color: black;
+}
+
+.fname{
+    text-align: center;
+    float: left;
+}
+label[for="fname"]{
+    padding-left: 4%;
+}
+label[for="lname"]{
+    padding-left: 9%;
+}
+label[for="name"]{
+    padding-left: 5%;
+}
+label[for="Eemail"]{
+    padding-left: 12.5%;
+}
+label[for="phone"]{
+    padding-left: 12%;
+}
+label[for="passnumber"]{
+    padding-left: 5%;
+}
+label[for="Issuedate"]{
+    padding-left: 10%;
+}
+label[for="issuedplace"]{
+    padding-left: 7%;
+}
+label[for="Expressdate"]{
+    padding-left: 7%;
+}
+label[for="birthdate"]{
+    padding-left: 5%;
+}
+label[for="age"]{
+    padding-left: 10%;
+}
+label[for="birthplace"]{
+    padding-left: 7%;
+}
+label[for="citizen"]{
+    padding-left: 7%;
+}
+
+.trip{
+    padding-left: 15px;
+}
+label{
+    font-weight: bold;
+
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c1dacd721.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css"/>
+    <title>RACE REGISTRATION FORm</title>
+</head>
+<body>
+
+    <h1><b><u>RACE REGISTRATION FORM</u></b></h1>
+
+
+    <form id="registrationForm">
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input style="width: 800px;" type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div>
+            <label for="title">Title:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title" value="PhD.">
+        </div>
+        <div id="fname">
+            <label for="fname">First name</label>
+            <label for="lname">Last name</label>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Michael" required>
+            <input type="text" id="lname" name="lname" placeholder="Jackson" required>
+        </div>
+          <div>
+            <label for="postal-code">Complete Postal Mailing Address (with Postal code & Country)</label>
+            <br>
+            <input style="width: 1000px; height: 70px;" type="text" id="postal-code" name="postal-code" required>
+          </div>
+          
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="8\d{9}" placeholder="87777777777" required>
+            <label for="fax">Fax:</label>
+            <input type="tel" id="fax" name="fax" pattern="\d{10}\(\d{3}\)" placeholder="1234567890(123)" required>
+        </div>
+
+        <div>
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+            <label for="Marital-st">Marital status:</label>
+            <select id="Marital-st" name="Marital-st" required>
+              <option value="">--Select--</option>
+              <option value="married">Married</option>
+              <option value="divorced">Divorced</option>
+              <option value="separated_or_widowed">Separated or Widowed</option>
+              <option value="never_married">Never Married</option>
+            </select>
+        </div>
+        
+        <div> <label for="Emergency"> Emergency - Concact </label>
+            <br>
+            <label for="name">Name</label>
+            <label for="Eemail">E-mail</label>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Michael" required>
+            <input type="Eemail" id="Eemail" name="Eemail" placeholder="example@gmail.com" required>
+            <input type="tel" id="phone" name="phone" pattern="8\d{9}" placeholder="87777777777" required>
+
+        </div>
+
+        
+
+       
+
+        
+            <label for="trip">Select trip:</label>
+            <br>
+        <div class="trip">
+            <label for="Stage_Race">Stage Race</label>
+            <input type="radio" id="Stage_Race" name="trip" value="Stage_Race">
+
+            <label for="Marathon">Mt. Everest Challenge Marathon (4 day trip)</label>
+            <input type="radio" id="Marathon" name="trip" value="Marathon">
+
+            <label for="Rally">Mt. Everest Bike Rally</label>
+            <input type="radio" id="Rally" name="trip" value="Rally">
+        </div>
+
+        
+            <label for="person">I am a:</label>
+            <br>
+        <div class="trip">
+            <label for="Runner">Runner</label>
+            <input type="radio" id="Runner" name="person" value="Runner">
+
+            <label for="Walker">Walker</label>
+            <input type="radio" id="Walker" name="person" value="Walker">
+
+            <label for="Cyclist">Cyclist</label>
+            <input type="radio" id="Cyclist" name="person" value="Cyclist">
+        </div>
+
+        <label for="tshirtSize">T-shirt Size:</label>
+            <div class="trip">
+            <label for="Small">Small</label>
+            <input type="radio" id="Small" name="tshirtSize" value="Small">
+
+            <label for="Medium">Medium</label>
+            <input type="radio" id="Medium" name="tshirtSize" value="Medium">
+
+            <label for="Large">Large</label>
+            <input type="radio" id="Large" name="tshirtSize" value="Large">
+
+            <label for="X-large">X-large</label>
+            <input type="radio" id="X-large" name="tshirtSize" value="X-large">
+            </div>
+        
+
+        <div>
+            <label for="Smoker">Smoker:</label>
+            <br>
+            <div class="trip">
+            <label for="Yes">Yes</label>
+            <input type="radio" id="yes" name="Smoker" value="yes">
+
+            <label for="No">No</label>
+            <input type="radio" id="no" name="Smoker" value="no">
+            </div>
+        </div>
+
+        <label for="Room">Room sharing preferencees:</label>
+        <input style="width: 600px;" type="text" id="Room" name="Room" required>
+
+        <p><b><u>Passport Details</u></b></p>
+        <label for="passname">Exact name as it appears:</label>
+        <br>
+        <input style="width: 600px;" type="text" id="passname" name="passname" placeholder="Michael Jackson Joseph" required>
+        <br>
+        <label for="passnumber">Number</label>
+        <label for="Issuedate">Date Issued</label>
+        <label for="issuedplace">Where issued</label>
+        <label for="Expressdate">Data Expires</label>
+        <br>
+        <input type="tel" id="passnumber" name="passname" required>
+        <input type="tel" id="Issuedate" name="Issuedate" required>
+        <input type="text" id="issuedplace" name="issuedplace" required>
+        <input type="tel" id="Expressdate" name="Expressdate" required>
+        <br>
+
+
+        
+        <label for="birthdate">Date of Birth</label>
+        <label for="age">Age</label>
+        <label for="birthplace">Place of Birth</label>
+        <label for="citizen">Citizen of</label>
+        <br>
+
+        <input style="width: 200px;" type="date" id="birthdate" name="birthdate" max="2021-01-01" required>
+        <input style="width: 200px;" type="number" id="age" name="age" min="2" max="69" required>
+        <input type="text" id="birthplace" name="birthplace" required>
+        <input type="text" id="citizen" name="citizen" required>
+        <br>
+
+        <div>
+            <label for="subscribe">I agree to all booking terms & conditions</label>
+            <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1" required>
+        </div>
+
+
+        <br>
+        <button type="submit">Submit</button>
+
+        
+    </form>
+      
+
+    <script src="index.js"></script>
+
+</body>
+</html>
